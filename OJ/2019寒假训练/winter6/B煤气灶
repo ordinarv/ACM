@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const int maxn = 3e5+5;
+const int INF = 0x3f3f3f3f;
+ll n,m,d,x;
+int main() {
+    cin>>n>>m>>d>>x;
+    ll sum = 0,ans = 0;
+    while(1){
+        sum+=n;
+        n+=d;
+        ans++;
+        if(sum>=m)break;
+    }
+    cout<<ans<<endl;
+	return 0;
+}
